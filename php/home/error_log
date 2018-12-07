@@ -1,0 +1,10 @@
+[19-Nov-2018 21:32:14 UTC] PHP Warning:  require_once(../../Conexion/Reportes.php): failed to open stream: No such file or directory in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php on line 24
+[19-Nov-2018 21:32:14 UTC] PHP Fatal error:  require_once(): Failed opening required '../../Conexion/Reportes.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php on line 24
+[19-Nov-2018 15:55:04 America/El_Salvador] PHP Fatal error:  Uncaught Error: Call to undefined method Reportes::obteneruempleados() in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php:46
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php on line 46
+[19-Nov-2018 15:56:00 America/El_Salvador] PHP Fatal error:  Uncaught Error: Call to undefined method Reportes::obteneruempleados() in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php:46
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/home/index.php on line 46

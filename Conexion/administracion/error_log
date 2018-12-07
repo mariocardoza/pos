@@ -1,0 +1,20 @@
+[20-Nov-2018 20:15:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 6
+[21-Nov-2018 09:58:54 America/El_Salvador] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php:139
+Stack trace:
+#0 /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php(20): Usuarios::set_usuario_perosonas(Array)
+#1 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php on line 139
+[21-Nov-2018 09:59:47 America/El_Salvador] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php:139
+Stack trace:
+#0 /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php(20): Usuarios::set_usuario_perosonas(Array)
+#1 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php on line 139
+[21-Nov-2018 22:10:47 UTC] PHP Parse error:  syntax error, unexpected 'email' (T_STRING) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 48
+[21-Nov-2018 22:10:49 UTC] PHP Parse error:  syntax error, unexpected 'email' (T_STRING) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 48
+[21-Nov-2018 22:10:55 UTC] PHP Parse error:  syntax error, unexpected 'email' (T_STRING) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 48
+[21-Nov-2018 22:30:50 UTC] PHP Parse error:  syntax error, unexpected '$cabeceras' (T_VARIABLE) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 43
+[21-Nov-2018 22:30:52 UTC] PHP Parse error:  syntax error, unexpected '$cabeceras' (T_VARIABLE) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 43
+[21-Nov-2018 22:30:58 UTC] PHP Parse error:  syntax error, unexpected '$cabeceras' (T_VARIABLE) in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 43
+[22-Nov-2018 14:15:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 37
+[22-Nov-2018 14:15:13 UTC] PHP Parse error:  syntax error, unexpected '}' in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 37
+[22-Nov-2018 14:15:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/data_json.php on line 37

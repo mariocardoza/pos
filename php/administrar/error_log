@@ -1,0 +1,16 @@
+[20-Nov-2018 19:51:59 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/usuarios.php on line 48
+[20-Nov-2018 20:38:36 UTC] PHP Fatal error:  Cannot redeclare Usuarios::val_email() in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php on line 75
+[21-Nov-2018 14:55:43 UTC] PHP Parse error:  syntax error, unexpected '$id_persona' (T_VARIABLE), expecting ')' in /home1/estudjl6/public_html/gentedecaa19a/sys/Conexion/administracion/Usuarios.php on line 150
+[22-Nov-2018 17:56:31 UTC] PHP Warning:  include_once(../../Conexion/Genericas2.php.php): failed to open stream: No such file or directory in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 2
+[22-Nov-2018 17:56:31 UTC] PHP Warning:  include_once(): Failed opening '../../Conexion/Genericas2.php.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 2
+[22-Nov-2018 17:56:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Genericas2' not found in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 4
+[22-Nov-2018 17:57:33 UTC] PHP Warning:  include_once(../../Conexion/Genericas2.php.php): failed to open stream: No such file or directory in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 2
+[22-Nov-2018 17:57:33 UTC] PHP Warning:  include_once(): Failed opening '../../Conexion/Genericas2.php.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 2
+[22-Nov-2018 17:57:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Genericas2' not found in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/prueba.php on line 4
+[22-Nov-2018 20:42:54 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home1/estudjl6/public_html/gentedecaa19a/sys/php/administrar/usuarios.php on line 108

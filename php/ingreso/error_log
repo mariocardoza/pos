@@ -1,0 +1,13 @@
+[19-Nov-2018 16:14:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Conexion' not found in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php on line 11
+[19-Nov-2018 16:14:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Conexion' not found in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php on line 11
+[19-Nov-2018 16:15:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Conexion' not found in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/json_consultar_usuario.php on line 11
+[22-Nov-2018 15:39:35 UTC] PHP Parse error:  syntax error, unexpected '$type' (T_VARIABLE) in /home1/estudjl6/public_html/gentedecaa19a/sys/php/ingreso/respuesta.php on line 13
