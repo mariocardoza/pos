@@ -42,6 +42,7 @@
   <script src="../../js/sweetalert2.all.min.js"></script>
 
   <script src="../../js/mask/jquery.inputmask.bundle.js" type="text/javascript"></script>
+  <script src="../../js/moment.min.js" type="text/javascript"></script>
 
 <style type="text/css" media="screen">
   header .dropdown-menu.dropdown-custom > li {
@@ -50,9 +51,24 @@
 </style>
 
 <script type="text/javascript">
+  var EXITO="Excelente";
+  var EXITO_MENSAJE="Datos almacenados correctamente";
+  var EXITO_ACTUALIZAR="Datos Actualizados";
+  var ERROR="Error";
+  var ERROR_MENSAJE="Hubo un problema al procesar la solicitud, intentelo nuevamente";
+  var ERROR_CORREO="Al parecer el correo ingresado ya existe";
+  var ELIMINAR="Eliminado";
+  var ELIMINAR_MENSAJE="La información han sido borrada de la base de datos";
   var UsuarioCrea = '<?php echo $_SESSION['codigo'];?>';
   $(function(){
     $('.telefono').inputmask("9999-9999", { "clearIncomplete": true });
+    $(".nacimiento").datepicker({
+    isRTL: false,
+    format: 'dd/mm/yyyy',
+    autoclose:true,
+    language: 'es',
+    endDate: '-18y',
+});
     $('.dui').inputmask("99999999-9", { "clearIncomplete": true });
     $('.nit').inputmask("9999-999999-999-9", { "clearIncomplete": true });
     $(".select_piker2").selectpicker();

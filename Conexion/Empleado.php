@@ -76,6 +76,12 @@ class Empleado
 		
 	}
 
+	//funcion editar empleado
+	public static function editar_empleado($data){
+		$sql="UPDATE `persona` SET `nombre`='$data[nombre]',`telefono`='$data[telefono]',`email`='$data[email]',`dui`='$data[dui]',`nit`='$data[nit]',`genero`='$data[genero]',`direccion`='$data[direccion]',`fecha_nacimiento`='$data[fecha_nacimiento]' WHERE $data[id]";
+		return array("1","exito",$sql);
+	}
+
 	//crear modal para editar
 	public static function modal_editar($id){
 		$sql="SELECT * FROM persona WHERE id=$id";
@@ -97,12 +103,13 @@ class Empleado
             <h4 class="modal-title">Editar empleado '.$empleado[nombre].'</h4>
           </div>
           <div class="modal-body">
-          <form method="post" accept-charset="utf-8" name="fm_nuevo_empleado" id="fm_editar_empleado">
+          <form method="post" accept-charset="utf-8" name="fm_editar_empleado" id="fm_editar_empleado">
             <input type="hidden" name="data_id" value="editar_empleado">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Nombre(*)</label>
+                      <input type="hidden" name="id_empleado" value="'.$empleado[id].'"
                       <input type="text" class="form-control" id="n_nombre" name="nombre" required="" placeholder="Ingrese el nombre" value="'.$empleado[nombre].'" >
                     </div>
                     <div class="form-group">
@@ -170,10 +177,9 @@ class Empleado
             </div>
           </form>
           </div>
-          <div class="modal-footer"><!-- margin-0 -->
+          <div class="modal-footer">
             <button type="button" class="btn btn-default btn-pure" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary" id="btn_guardar">Guardar</button>
-            <!--button type="button" data-formulario="fm_nuevo" class="btn btn-primary valida1">Validar</button-->
+            <button type="button" class="btn btn-primary" id="btn_actualizar">Actualizar</button>
           </div>
         </div>
       </div>

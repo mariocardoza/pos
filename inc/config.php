@@ -115,7 +115,7 @@ $primary_nav = array(
             array(
                 'name'  => 'Realizar venta',
                 'url'   => '#',
-                'url_real'=> 'registro.php'
+                'url_real'=> 'registro_venta.php'
             )
         )
     ),
@@ -124,8 +124,13 @@ $primary_nav = array(
         'icon'  => 'gi gi-user',
         'sub'   => array(
             array(
+                'name'  => 'Administración de clientes',
+                'url'   => '../../php/clientes/clientes.php',
+                'url_real'=> 'clientes.php' || "clientesj.php"
+            ),
+            array(
                 'name'  => 'Registro de cliente',
-                'url'   => '#',
+                'url'   => '../../php/clientes/registro.php',
                 'url_real'=> 'registro.php'
             )
         )

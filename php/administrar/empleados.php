@@ -151,6 +151,10 @@ if($result[0] == 1)$datos = $result[1];
                         <input type="text" required name="nit" id="n_nit" class="form-control nit">
                     </div>
                     <div class="form-group"> 
+                        <label class="control-label" for="rol">Fecha de nacimiento(*):</label>
+                        <input type="text" required name="fecha_nacimiento" id="n_fecha_nacimiento" class="form-control nacimiento">
+                    </div>
+                    <div class="form-group"> 
                         <label class="control-label" for="rol">Género(*):</label>
                         <select id="genero" required name="genero" class="form-control select_piker2" data-plugin="selectpicker" data-live-search="true" data-placeholder="Seleccione el Municipio" readonly="" style="width: 250px;">
                             <option value="" disabled="" selected="">seleccione..</option>
@@ -369,6 +373,48 @@ if($result[0] == 1)$datos = $result[1];
                 show: 'false'
             }); 
         });
+
+        //boton para actualizar
+        $(document).on("click",'#btn_actualizar', function(e){
+          var valid = $("#fm_editar_proceso").valid();
+          if(valid){
+            var datos = $("#fm_editar_empleado").serialize();
+            $.ajax({
+                url: "../../Conexion/administracion/data_json.php",
+                dataType: "json",
+                data: datos,
+                method: "POST",
+                success: function(json) {
+                    console.log(json);
+                    /*if(json[0]=='1'){
+                        if ($("#file_1").val()!="") {
+                            insertar_imagen($("#file_1"),json[1][0]);
+                        }else{
+                            iziToast.success({
+                                title: '<?php echo EXITO; ?>',
+                                message: '<?php echo EXITO_MENSAJE;?>',
+                                timeout: 3000,
+                            });
+                            var timer=setInterval(function(){
+                                $("#md_nuevo").modal('toggle');
+                                location.reload();
+                                clearTimeout(timer);
+                            },3500);
+                        }
+                    }if(json[0]=='-1'){
+                        swal.close();
+                        iziToast.error({
+                            title: '<?php echo ERROR; ?>',
+                            message: '<?php echo ERROR_MENSAJE;?>',
+                            timeout: 3000,
+                        });
+                    }*/
+                }
+            });
+          }
+        
+
+        });
         /*** boton guardar nuevo ****/
         $(document).on("click", "#btn_guardar", function(e) {
             console.log("guardar");
@@ -559,29 +605,66 @@ if($result[0] == 1)$datos = $result[1];
 
     // funcion eliminar usuario
     function eliminar(id){
+      /*swal({
+        title: '¿Está seguro de eliminar el empleado?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'si, continuar!'
+      }).then((result) => {
+        if (result.value) {
+          console.log("aqui");
+          $.ajax({
+              url:'../../Conexion/administracion/data_json.php',
+              type:'GET',
+              dataType:'json',
+              data:{data_id:'eliminar_empleado',id:id},
+              success: function(json){
+                if(json[0]=='1'){
+                      iziToast.success({
+                          title: '<?php echo EXITO; ?>',
+                          message: '<?php echo ELIMINAR_MENSAJE;?>',
+                          timeout: 3000,
+                      });
+                      var timer=setInterval(function(){
+                          location.reload();
+                          clearTimeout(timer);
+                      },3500);
+                  }else
+                    iziToast.error({
+                        title: '<?php echo ERROR; ?>',
+                        message: '<?php echo ERROR_MENSAJE;?>',
+                        timeout: 3000,
+                    });
+               }
+          });
+        }
+      })
+      */
       $.ajax({
-        url:'../../Conexion/administracion/data_json.php',
-        type:'GET',
-        dataType:'json',
-        data:{data_id:'eliminar_empleado',id:id},
-        success: function(json){
-          if(json[0]=='1'){
-                iziToast.success({
-                    title: '<?php echo EXITO; ?>',
-                    message: '<?php echo ELIMINAR_MENSAJE;?>',
-                    timeout: 3000,
-                });
-                var timer=setInterval(function(){
-                    location.reload();
-                    clearTimeout(timer);
-                },3500);
-            }else
-              iziToast.error({
-                  title: '<?php echo ERROR; ?>',
-                  message: '<?php echo ERROR_MENSAJE;?>',
-                  timeout: 3000,
-              });
-         }
-    });
+              url:'../../Conexion/administracion/data_json.php',
+              type:'GET',
+              dataType:'json',
+              data:{data_id:'eliminar_empleado',id:id},
+              success: function(json){
+                if(json[0]=='1'){
+                      iziToast.success({
+                          title: '<?php echo EXITO; ?>',
+                          message: '<?php echo ELIMINAR_MENSAJE;?>',
+                          timeout: 3000,
+                      });
+                      var timer=setInterval(function(){
+                          location.reload();
+                          clearTimeout(timer);
+                      },3500);
+                  }else
+                    iziToast.error({
+                        title: '<?php echo ERROR; ?>',
+                        message: '<?php echo ERROR_MENSAJE;?>',
+                        timeout: 3000,
+                    });
+               }
+          });
     }
 </script>

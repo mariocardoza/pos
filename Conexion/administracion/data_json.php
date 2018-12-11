@@ -22,6 +22,11 @@
 		echo json_encode($result);
 		exit();
 	}
+	if($_POST['data_id']=='editar_empleado'){
+		$result=Empleado::editar_empleado($_POST);
+		echo json_encode($result);
+		exit();
+	}
 	if($_GET['data_id']=='eliminar_empleado'){
 		$result = Empleado::eliminar_empleado($_GET['id']);
 		echo json_encode($result);
